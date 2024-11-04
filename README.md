@@ -12,7 +12,6 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -24,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/cookie-monster01/blog-card.git]
+- Live Site URL: [https://blog-card-ruby-tau.vercel.app/]
 
 ## My process
 
