@@ -1,0 +1,189 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+    line-height: 1.1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+body {
+    background: hsl(47, 88%, 63%);
+    font-family: "Figtree", serif;
+}
+
+.container {
+    grid-template-columns: 0.93fr;
+    grid-template-rows: 0.35fr 0.025fr;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 0.5rem;
+}
+
+.card {
+    grid-template-columns: 0.93fr;
+    grid-template-rows: 0.85fr 1fr;
+    max-inline-size: 24em;
+    align-items: center; 
+    justify-content: center; 
+    margin: 0 auto;
+    border: 1.5px solid #000;
+    border-radius: 1rem;
+    filter: drop-shadow(0.45em 0.45em  hsl(0, 0%, 7%));
+}
+
+div.card-img {
+    padding-inline: calc(max(0.97em, 0.25vw) - 1.6%);
+    padding-block: 0.35em;
+    margin-block: 1em;
+    
+}
+
+.card-img img {
+    min-height: 201px;
+    min-width: auto;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    margin: 0 auto;
+    
+}
+
+
+.card-body {
+    padding-block: 0;
+    padding: 0;
+    margin-inline: 0.75em;
+}
+
+div.card-body .badge {
+    padding: 0.5em 0.85em;
+    margin-top: 0.3em;
+    margin-bottom: max(0.85em, 0.75vh);
+    background: hsl(47, 88%, 63%);
+    color: #000;
+    font-size: clamp(.8rem, .775rem + .10vw, .875rem);
+    font-weight: 800;
+    border-radius: 0.2rem;
+}
+
+.card-body p:nth-of-type(2) {
+    font-size: clamp(.75rem, .705rem + .17vw, .875rem);
+    font-weight: 500;
+    margin-bottom: max(.8em, 1vh);
+}
+
+h2.card-title {
+    font-size: clamp(1.25rem, 1.16rem + .56vw, 1.5rem);
+    font-weight: 800;
+    margin-bottom: max(0.5em, 1vh);
+}
+
+h2.card-title:hover{
+    cursor: pointer;
+    color: hsl(47, 88%, 63%);
+}
+
+p.card-text {
+    font-size: clamp(.9rem, .864rem + .16vw, 1rem);
+    color: hsl(0, 0%, 42%);
+    margin-bottom: max(1.2em, 1.5vh);
+}
+
+div.credential {
+    grid-template-columns: 0.2fr 1.5fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 1.5em;
+}
+
+div.credential img {
+    margin: 0;
+    padding: 0;
+}
+
+div.credential p {
+    margin-bottom: 0;
+    margin-left: 0.85em;
+    font-weight: 800;
+    font-size: clamp(.875rem, .831rem + .19vw, 1rem);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
