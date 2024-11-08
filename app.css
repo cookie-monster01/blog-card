@@ -17,6 +17,7 @@ html {
 body {
     line-height: 1.5;
     min-height: 100vh;
+    
 }
 
 img,
@@ -80,107 +81,110 @@ h6 {
 
 body {
     background: hsl(47, 88%, 63%);
-    font-family: "Figtree", serif;
+    font-family: "Figtree", sans-serif;
+    padding: 16px;  
 }
 
 .container {
-    grid-template-columns: 0.93fr;
-    grid-template-rows: 0.35fr 0.025fr;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 2fr;
+    place-items: center;
+    border: 1px solid #000;
+    width: 100%;
     min-height: 100vh;
-    gap: 0.5rem;
 }
 
 .card {
-    grid-template-columns: 0.93fr;
-    grid-template-rows: 0.85fr 1fr;
-    max-inline-size: 24em;
-    align-items: center; 
-    justify-content: center; 
-    margin: 0 auto;
-    border: 1.5px solid #000;
-    border-radius: 1rem;
-    filter: drop-shadow(0.45em 0.45em  hsl(0, 0%, 7%));
+    max-width: 24rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    place-content: center;
+    border: 1px solid #000;
+    filter: drop-shadow(0.65em 0.65em hsl(0, 0%, 7%));
+    border-radius: 1.25rem;
+    background: #fff;  
 }
 
-div.card-img {
-    padding-inline: calc(max(0.97em, 0.25vw) - 1.6%);
-    padding-block: 0.35em;
-    margin-block: 1em;
-    
+.card::after {
+    position: relative;
+    left: 1em;
+    transition: drop-shadow steps(3, start);
+}
+
+.card-img {
+    margin-inline: min(1.4em, 8vw);
+    margin-block: min(1.5em, 4vh);
 }
 
 .card-img img {
     min-height: 201px;
-    min-width: auto;
     object-fit: cover;
-    border-radius: 0.75rem;
-    margin: 0 auto;
-    
+    border-radius: 1rem;   
 }
-
 
 .card-body {
-    padding-block: 0;
-    padding: 0;
-    margin-inline: 0.75em;
+   margin-inline: 1.4em;
 }
 
-div.card-body .badge {
-    padding: 0.5em 0.85em;
-    margin-top: 0.3em;
-    margin-bottom: max(0.85em, 0.75vh);
+.badge {
     background: hsl(47, 88%, 63%);
-    color: #000;
-    font-size: clamp(.8rem, .775rem + .10vw, .875rem);
-    font-weight: 800;
+    display: inline-block;
+    padding-inline: 0.75em;
+    padding-block: 0.35em;
     border-radius: 0.2rem;
+    font-size: 0.85em;
+    font-weight: 800;
+    margin-bottom: 1em;
 }
 
 .card-body p:nth-of-type(2) {
-    font-size: clamp(.75rem, .705rem + .17vw, .875rem);
     font-weight: 500;
-    margin-bottom: max(.8em, 1vh);
+    font-size: clamp(.8rem, .775rem + .10vw, .875rem);
+    margin-bottom: 1.2em;
 }
 
-h2.card-title {
+.card-title {
+    margin-bottom: 0.7em;
+}
+
+h2 a {
+    text-decoration: none;
+    color: #000;
     font-size: clamp(1.25rem, 1.16rem + .56vw, 1.5rem);
     font-weight: 800;
-    margin-bottom: max(0.5em, 1vh);
 }
 
-h2.card-title:hover{
-    cursor: pointer;
+h2 a:hover:active:focus {
     color: hsl(47, 88%, 63%);
+
+}
+
+h2 a::after {
+    
 }
 
 p.card-text {
-    font-size: clamp(.9rem, .864rem + .16vw, 1rem);
     color: hsl(0, 0%, 42%);
-    margin-bottom: max(1.2em, 1.5vh);
+    font-size: clamp(.875rem, .832rem + .19vw, 1rem);
+    margin-bottom: 1.3em;
 }
 
-div.credential {
-    grid-template-columns: 0.2fr 1.5fr;
-    grid-template-rows: 1fr;
+.credential {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    gap: 0.75rem;
+    align-items: center;
     margin-bottom: 1.5em;
 }
 
-div.credential img {
-    margin: 0;
-    padding: 0;
-}
-
-div.credential p {
-    margin-bottom: 0;
-    margin-left: 0.85em;
+.credential p {
     font-weight: 800;
-    font-size: clamp(.875rem, .831rem + .19vw, 1rem);
+    font-size: 0.85rem;
 }
 
 .attribution {
-    font-size: 11px;
+    font-size: 0.7rem;
     text-align: center;
 }
 
