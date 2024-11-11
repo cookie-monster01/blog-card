@@ -90,7 +90,7 @@ body {
     grid-template-columns: minmax(96%, min-content);
     place-items: center;
     place-content: center;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     width: 100%;
     min-height: 100vh;
 }
@@ -103,7 +103,7 @@ body {
     border: 1px solid #000;
     filter: drop-shadow(0.6em 0.6em hsl(0, 0%, 7%));
     border-radius: 1.25rem;
-    background: #fff;
+    background: hsl(0, 0%, 100%);
     position: relative;
 }
 
@@ -178,6 +178,7 @@ h2 a:hover {
 p.card-text {
     color: hsl(0, 0%, 42%);
     font-size: clamp(.875rem, .831rem + .19vw, 1rem);
+    font-family: sans-serif;
     margin-bottom: 1.3em;
 }
 
