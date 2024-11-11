@@ -110,7 +110,7 @@ body {
 
 .card-img {
     margin-inline: min(1.4em, 6vw);
-    margin-block: min(1.4em, 2vh);
+    margin-block: min(1.4em, 4vh);
 }
 
 .card-img img {
