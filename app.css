@@ -17,7 +17,7 @@ html {
 body {
     line-height: 1.5;
     min-height: 100vh;
-    
+
 }
 
 img,
@@ -82,49 +82,45 @@ h6 {
 body {
     background: hsl(47, 88%, 63%);
     font-family: "Figtree", sans-serif;
-    padding: 16px;  
+    padding: 16px;
 }
 
 .container {
     display: grid;
-    grid-template-columns: 2fr;
-    place-items: center;
+    grid-template-columns: minmax(96%, min-content);
+    align-items: center;
+    justify-items: center;
     border: 1px solid #000;
     width: 100%;
     min-height: 100vh;
 }
 
 .card {
-    max-width: 24rem;
     display: grid;
-    grid-template-columns: 1fr;
-    place-items: center;
-    place-content: center;
+    grid-template-columns: minmax(auto, 384px);
+    align-items: center;
+    justify-items: center;
     border: 1px solid #000;
-    filter: drop-shadow(0.65em 0.65em hsl(0, 0%, 7%));
+    filter: drop-shadow(0.6em 0.6em hsl(0, 0%, 7%));
     border-radius: 1.25rem;
-    background: #fff;  
+    background: #fff;
+    position: relative;
 }
 
-.card::after {
-    position: relative;
-    left: 1em;
-    transition: drop-shadow steps(3, start);
-}
 
 .card-img {
-    margin-inline: min(1.4em, 8vw);
-    margin-block: min(1.5em, 4vh);
+    margin-inline: min(1.4em, 6vw);
+    margin-block: min(1.4em, 4vh);
 }
 
 .card-img img {
     min-height: 201px;
     object-fit: cover;
-    border-radius: 1rem;   
+    border-radius: 1rem;
 }
 
 .card-body {
-   margin-inline: 1.4em;
+    margin-inline: 1.4em;
 }
 
 .badge {
@@ -135,7 +131,7 @@ body {
     border-radius: 0.2rem;
     font-size: 0.85em;
     font-weight: 800;
-    margin-bottom: 1em;
+    margin-bottom: 0.9em;
 }
 
 .card-body p:nth-of-type(2) {
@@ -153,20 +149,35 @@ h2 a {
     color: #000;
     font-size: clamp(1.25rem, 1.16rem + .56vw, 1.5rem);
     font-weight: 800;
+    z-index: 2;
 }
 
-h2 a:hover:active:focus {
+
+.card h2 a::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    content: "";
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+    filter: drop-shadow(1em 1em hsl(0, 0%, 7%));
+    transition: 2s dropshadow steps(3);
+}
+
+
+h2 a:hover {
     color: hsl(47, 88%, 63%);
-
-}
-
-h2 a::after {
-    
+    transition: 200ms color;
 }
 
 p.card-text {
     color: hsl(0, 0%, 42%);
-    font-size: clamp(.875rem, .832rem + .19vw, 1rem);
+    font-size: clamp(.88rem, .836rem + .19vw, 1rem);
     margin-bottom: 1.3em;
 }
 
@@ -175,7 +186,7 @@ p.card-text {
     grid-template-columns: 1fr 8fr;
     gap: 0.75rem;
     align-items: center;
-    margin-bottom: 1.5em;
+    margin-bottom: 1.4em;
 }
 
 .credential p {
