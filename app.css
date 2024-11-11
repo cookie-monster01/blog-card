@@ -88,8 +88,8 @@ body {
 .container {
     display: grid;
     grid-template-columns: minmax(96%, min-content);
-    align-items: center;
-    justify-items: center;
+    place-items: center;
+    place-content: center;
     border: 1px solid #000;
     width: 100%;
     min-height: 100vh;
