@@ -147,7 +147,7 @@ body {
 h2 a {
     text-decoration: none;
     color: #000;
-    font-size: clamp(1.25rem, 1.16rem + .56vw, 1.5rem);
+    font-size: clamp(1.2rem, 1.09rem + .65vw, 1.5rem);
     font-weight: 800;
     z-index: 2;
 }
@@ -177,7 +177,7 @@ h2 a:hover {
 
 p.card-text {
     color: hsl(0, 0%, 42%);
-    font-size: clamp(.875rem, .831rem + .19vw, 1rem);
+    font-size: clamp(.8rem, .693rem + .43vw, 1rem);
     font-family: sans-serif;
     margin-bottom: 1.3em;
 }
