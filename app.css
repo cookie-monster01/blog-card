@@ -110,7 +110,7 @@ body {
 
 .card-img {
     margin-inline: min(1.4em, 6vw);
-    margin-block: min(1.4em, 4vh);
+    margin-block: min(1.4em, 2vh);
 }
 
 .card-img img {
@@ -177,7 +177,7 @@ h2 a:hover {
 
 p.card-text {
     color: hsl(0, 0%, 42%);
-    font-size: clamp(.8rem, .693rem + .43vw, 1rem);
+    font-size: clamp(.875rem, .831rem + .19vw, 1rem);
     font-family: sans-serif;
     margin-bottom: 1.3em;
 }
