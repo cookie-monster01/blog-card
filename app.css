@@ -82,7 +82,7 @@ h6 {
 body {
     background: hsl(47, 88%, 63%);
     font-family: "Figtree", sans-serif;
-    padding: 16px;
+    padding-inline: 16px;
 }
 
 .container {
