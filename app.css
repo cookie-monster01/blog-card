@@ -102,7 +102,7 @@ body {
     justify-items: center;
     border: 1px solid #000;
     filter: drop-shadow(0.6em 0.6em hsl(0, 0%, 7%));
-    border-radius: 1.25rem;
+    border-radius: 1rem;
     background: hsl(0, 0%, 100%);
     position: relative;
 }
@@ -116,7 +116,7 @@ body {
 .card-img img {
     min-height: 201px;
     object-fit: cover;
-    border-radius: 1rem;
+    border-radius: 0.85rem;
 }
 
 .card-body {
@@ -179,6 +179,7 @@ p.card-text {
     color: hsl(0, 0%, 42%);
     font-size: clamp(.875rem, .831rem + .19vw, 1rem);
     font-family: sans-serif;
+    letter-spacing: 0;
     margin-bottom: 1.3em;
 }
 
