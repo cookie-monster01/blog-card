@@ -177,7 +177,7 @@ h2 a:hover {
 
 p.card-text {
     color: hsl(0, 0%, 42%);
-    font-size: clamp(.88rem, .836rem + .19vw, 1rem);
+    font-size: clamp(.875rem, .831rem + .19vw, 1rem);
     margin-bottom: 1.3em;
 }
 
