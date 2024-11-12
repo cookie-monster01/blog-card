@@ -166,13 +166,13 @@ h2 a {
 .card:focus,
 .card:active {
     filter: drop-shadow(1em 1em hsl(0, 0%, 7%));
-    transition: 2s dropshadow steps(3);
+    transition: 500ms allow-discrete;
 }
 
 
 h2 a:hover {
     color: hsl(47, 88%, 63%);
-    transition: 200ms color;
+    transition: 500ms color;
 }
 
 p.card-text {
